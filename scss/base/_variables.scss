@@ -1,0 +1,42 @@
+//Descriptive color variables
+
+$white			: #fff;
+$black			: #000;
+$shuttle-gray	: #515F67;
+$athens-gray	: #dfe2e6;
+$malibu-blue	: #4bcaff;
+$yellow-orange	: #ffa949;
+$footer-gray	: #7c8082;
+
+//Functional color variables
+
+$color-bck-dark		: $shuttle-gray;
+$color-bck-blue		: $malibu-blue;
+$color-bck-light	: $white;
+$color-bck-navbar	: rgba($shuttle-gray,0.9);
+
+$color-text-light	: $white;
+$color-text-dark	: $shuttle-gray;
+
+$color-link-hover			: $malibu-blue;
+$color-link-active			: $malibu-blue;
+$color-link-active-border	: $malibu-blue;
+$color-link-visited			: $white;
+
+$color-body			:$shuttle-gray;
+
+//Font stacks
+
+$stack-sans-serif	: Helvetica, Arial, sans-serif;
+$stacks-segoeui		: 'Segoe UI', $stack-sans-serif;
+
+//Asset paths
+
+$path-img		:'../images';
+$path-font		:'../fonts';
+
+//Media query breakpoints
+
+$brk-narrow		:'(min-width: 768px)';
+$brk-wide		:'(min-width: 1024px)';
+

@@ -1,0 +1,63 @@
+
+#whois{
+	background: url('#{$path-img}/section2.jpg') no-repeat center;
+	background-size: cover;
+	color: white;
+	height:100%;
+
+}
+
+#contact{
+	padding-top: 80px;
+	background: url('#{$path-img}/section3.jpg') no-repeat center;
+	background-size: cover;
+	color: white;
+	height:100%;
+}
+
+#portfolio {
+	position: relative;
+}
+
+.wrapper{
+	max-width: 1900px;
+	margin:0 auto;
+}
+
+.sect {
+	padding-top:80px;
+}
+
+.bluesect{
+	background-color: $color-bck-blue;
+}
+
+.whitesect{
+	background-color: $color-bck-light;
+	color: $color-text-dark;
+	height:100%;
+}
+
+.greysect {
+	background-color: $color-bck-dark;
+	@extend %clearfix;
+}
+
+.content-wrapper{
+	@extend %content;
+	width: 90%;
+	@media (min-width: 767px){
+		width:75%;
+	}
+	
+}
+
+.header-wrapper {
+	padding:0;
+	@media #{$brk-narrow}{
+		width: 75%;
+		margin: auto;
+		max-width: 1170px;
+	}
+	
+}

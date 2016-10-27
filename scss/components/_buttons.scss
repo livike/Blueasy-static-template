@@ -1,0 +1,38 @@
+.button{
+	padding: 12px 12px;
+	cursor: pointer;
+	user-select: none;
+	transition: all 60ms ease-in-out;
+	text-align: center;
+	white-space: nowrap;
+	text-decoration: none !important;
+	text-transform: uppercase;
+
+	color: #fff;
+	border: 0 none;
+
+	font-size: 14px;
+
+	&:hover {
+		transition: all 60ms ease;
+		opacity: .85;
+	}
+
+
+}
+
+.button.-border {
+	
+	color: $black;
+	border: 2px solid $black;
+	background: transparent;
+	width:40%;
+
+  	&:hover, 
+  	&.-active {
+		color: $white;
+		border-color: $white;
+		background: transparent;
+  }
+
+}

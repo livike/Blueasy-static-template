@@ -1,0 +1,24 @@
+footer {
+	height:100px;
+}
+
+.footer-nav {
+	display:inline-block;
+	float:left;
+}
+
+.footer-nav li {
+	float:left;
+	margin-right:10px;
+	border-right: 1px solid $footer-gray;
+}
+
+.footer-nav a,
+.copy {
+	color:$footer-gray;
+}
+
+.copy {
+	float:right;
+	margin:20px 0;
+}

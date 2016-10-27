@@ -1,0 +1,34 @@
+@font-face {  
+	font-family: 'Segoe UI';
+	src: url('#{$path-font}/SegoeUI.eot');
+	src: url('#{$path-font}/SegoeUI.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-font}/SegoeUI.woff') format('woff'),
+			 url('#{$path-font}/SegoeUI.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.author {
+	color: $malibu-blue;
+}
+
+.whois-socicons i{
+	color: $white;
+	border: 2px solid $white;
+	padding: 15px;
+	margin: 5px;
+}
+
+.sect p {
+	font-size: 0.8em;
+}
+
+span[class^='quote'],span[class*=' quote'] {
+	font-size: 1.4em;
+}
+
+.nav,
+.footer-nav,
+.copy {
+	font-size: 0.7em;
+}

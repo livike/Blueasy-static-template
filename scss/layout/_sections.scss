@@ -1,0 +1,209 @@
+
+//Services
+
+.services-container{
+	@extend %clearfix;
+}
+.serviceblock{
+	margin: 2% 2% 0 2%;
+
+	@media #{$brk-narrow}{
+		display:inline-block;
+		float:left;
+		width:46%;
+		}
+	@media #{$brk-wide}{
+		display:inline-block;
+		float:left;
+		width:21%;
+		}
+}
+	
+.serviceblock img {
+	margin-right: 10px;
+
+	@media #{$brk-wide}{
+  		display:block;
+	}
+}
+
+
+//Portfolio
+
+.portfolio {
+	&-filter{
+		.btn {
+			border: none;
+			background: transparent;
+			color: $color-text-dark;
+			padding: 5px 10px 5px 10px;
+			text-decoration: none;
+			margin: 5px;
+		}
+
+		button.active-btn {
+			color:$malibu-blue;
+		}
+
+		button:focus {
+			outline:0;
+		}
+	}
+		
+	&-container {
+		@extend %clearfix;
+		width:100%;
+	}
+	&-filter {
+		@extend %nav-floating;
+		margin:0;
+	}
+
+	&-filter li {
+		@extend %nav-li-floating;
+	}
+
+	&-header {
+		@extend %clearfix;
+		margin-bottom: 10px;
+	}
+
+	&-item {
+		position:relative;
+/*		pointer-events:none;
+*/		@media #{$brk-narrow}{
+			float:left;
+			width:46%;
+			margin: 2% 2% 2% 2%;
+		}
+		@media #{$brk-wide}{
+			float:left;
+			width:21%;
+			margin: 2% 2% 2% 2%;
+		}
+
+		span{
+			display:block;
+			background-color: transparent;
+		}
+
+		span:hover:before{
+			content: '';
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: 0;
+			margin-bottom:5px;
+			width: 100%;
+			background: rgba(0,0,0,.5);
+		}
+
+		span:hover::after {
+			content: '+';
+			color: $white;
+			font-size: 40px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+	}
+}
+
+#overlay{
+	background: rgba(255,255,255,0.8);
+	width:100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	text-align: center;
+	display:none;
+	overflow: hidden;
+}
+
+#overlay img{
+	margin-top:20%;
+}
+
+//Features
+
+.features{
+	&-wrapper{
+		@extend %content;
+		@extend %clearfix;
+		width:90%;
+	}
+	&-item{
+		margin: 2% 2% 0 2%;	
+
+		@media #{$brk-narrow}{
+			width:46%;
+		}
+	}
+}
+
+@media #{$brk-narrow}{
+	.fe-content{
+		position:relative;
+		min-height: 300px;
+	}
+
+	.fe-left{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	.fe-right{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+//Who is
+
+.whois-column{
+	margin: 2% 2% 0 2%;	
+
+	@media #{$brk-narrow}{
+		display:inline-block;
+		float:left;
+		width:46%;
+		}
+}
+.whois-container{
+	@extend %clearfix;
+}
+
+.whois-socicons li {
+	display:inline-block;
+}
+
+//Twitter
+
+.twitter-header span {
+	float:right;
+}
+
+//Testimonials
+
+.testimonials-header span {
+	float:right;
+	position: relative;
+}
+
+#testimonials-slider {
+	height: 200px;
+	overflow:hidden;
+}
+
+#testimonials-slider div {
+	position: absolute;
+	width:70%;
+}
+
+span[class^='author'],span[class*=' author']{
+    color: $malibu-blue;
+}

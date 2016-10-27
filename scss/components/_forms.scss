@@ -1,0 +1,54 @@
+.contact-form {
+	position:relative;
+
+	p{
+		font-size: 0.8em;
+		margin-top:40px;
+	}
+	label {
+		display: block;
+		text-transform: uppercase;
+		padding:15px 0;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		@extend %input;
+		height:50px;
+
+	}
+	textarea {
+		@extend %input;
+	}
+
+	.contact-left {
+		@media #{$brk-wide}{
+			width:46%;
+		}
+	}
+
+	.contact-text {
+
+		@media #{$brk-wide}{
+			position:absolute;
+			width:46%;
+			top:0;
+			right:0;	
+		}
+
+	}
+}
+
+.message-btn {
+	border:none;
+	color: $white;
+	background-color: $malibu-blue;
+	height:50px;
+	width:100%;
+	margin: 20px 0;
+	text-transform: uppercase;
+
+	@media #{$brk-wide}{
+		width:40%;
+	}
+}
